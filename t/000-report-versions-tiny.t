@@ -56,7 +56,6 @@ eval { $v .= pmver('Module::Build','0.4202') };
 eval { $v .= pmver('Module::Runtime','any version') };
 eval { $v .= pmver('Moo','1.000008') };
 eval { $v .= pmver('Moo::Role','any version') };
-eval { $v .= pmver('Path::Iterator::Rule','any version') };
 eval { $v .= pmver('Path::Tiny','any version') };
 eval { $v .= pmver('Pod::Eventual','any version') };
 eval { $v .= pmver('Test::Fatal','any version') };
