@@ -6,7 +6,7 @@ BEGIN {
   $MetaPOD::Spec::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $MetaPOD::Spec::VERSION = '0.2.4';
+  $MetaPOD::Spec::VERSION = '0.3.0';
 }
 
 # ABSTRACT: The Specification of the MetaPOD format
@@ -18,7 +18,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -26,7 +26,7 @@ MetaPOD::Spec - The Specification of the MetaPOD format
 
 =head1 VERSION
 
-version 0.2.4
+version 0.3.0
 
 =begin MetaPOD::JSON v1.1.0
 

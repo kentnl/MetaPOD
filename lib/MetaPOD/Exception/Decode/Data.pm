@@ -7,7 +7,7 @@ BEGIN {
   $MetaPOD::Exception::Decode::Data::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $MetaPOD::Exception::Decode::Data::VERSION = '0.2.4';
+  $MetaPOD::Exception::Decode::Data::VERSION = '0.3.0';
 }
 
 # ABSTRACT: Failures with decoding source data
@@ -37,7 +37,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -45,7 +45,7 @@ MetaPOD::Exception::Decode::Data - Failures with decoding source data
 
 =head1 VERSION
 
-version 0.2.4
+version 0.3.0
 
 =head1 ATTRIBUTES
 

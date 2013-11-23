@@ -2,6 +2,7 @@ use strict;
 use warnings;
 use Test::More;
 use Test::Fatal;
+use Test::Requires qw(MetaPOD::Format::JSON);
 use FindBin;
 use Path::Tiny qw(path);
 use Path::Iterator::Rule;
