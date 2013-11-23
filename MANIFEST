@@ -47,9 +47,9 @@ t/01-extractor/01-basic.t
 t/02-role-formatter/01-supported.t
 t/03-result/01-basic.t
 t/04-assembler/01-basic.t
+t/self-extract.t
 weaver.ini
 xt/author/critic.t
-xt/author/self-extract.t
 xt/release/cpan-changes.t
 xt/release/distmeta.t
 xt/release/eol.t
