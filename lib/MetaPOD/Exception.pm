@@ -6,7 +6,7 @@ BEGIN {
   $MetaPOD::Exception::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $MetaPOD::Exception::VERSION = '0.2.5';
+  $MetaPOD::Exception::VERSION = '0.3.0';
 }
 
 use Moo;
@@ -32,7 +32,7 @@ MetaPOD::Exception - Base class for C<MetaPOD> exceptions.
 
 =head1 VERSION
 
-version 0.2.5
+version 0.3.0
 
 =begin MetaPOD::JSON v1.1.0
 

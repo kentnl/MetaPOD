@@ -91,7 +91,7 @@
             "Moo::Role" : "0",
             "Pod::Eventual" : "0",
             "Throwable::Error" : "0",
-            "perl" : "v5.10.0",
+            "perl" : "5.006",
             "strict" : "0",
             "version" : "0.77",
             "warnings" : "0"
@@ -111,39 +111,39 @@
    "provides" : {
       "MetaPOD" : {
          "file" : "lib/MetaPOD.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Assembler" : {
          "file" : "lib/MetaPOD/Assembler.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Exception" : {
          "file" : "lib/MetaPOD/Exception.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Exception::Decode::Data" : {
          "file" : "lib/MetaPOD/Exception/Decode/Data.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Extractor" : {
          "file" : "lib/MetaPOD/Extractor.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::JSON" : {
          "file" : "lib/MetaPOD/JSON.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Result" : {
          "file" : "lib/MetaPOD/Result.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Role::Format" : {
          "file" : "lib/MetaPOD/Role/Format.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       },
       "MetaPOD::Spec" : {
          "file" : "lib/MetaPOD/Spec.pm",
-         "version" : "v0.2.5"
+         "version" : "v0.3.0"
       }
    },
    "release_status" : "stable",
@@ -158,7 +158,7 @@
          "web" : "https://github.com/kentfredric/MetaPOD"
       }
    },
-   "version" : "0.2.5",
+   "version" : "0.3.0",
    "x_BuiltWith" : {
       "modules" : {
          "Carp" : "1.32",

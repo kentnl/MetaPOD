@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "MetaPOD",
-  "dist_version" => "0.2.5",
+  "dist_version" => "0.3.0",
   "license" => "perl",
   "module_name" => "MetaPOD",
   "recommends" => {},
@@ -31,7 +31,7 @@ my %module_build_args = (
     "Moo::Role" => 0,
     "Pod::Eventual" => 0,
     "Throwable::Error" => 0,
-    "perl" => "v5.10.0",
+    "perl" => "5.006",
     "strict" => 0,
     "version" => "0.77",
     "warnings" => 0

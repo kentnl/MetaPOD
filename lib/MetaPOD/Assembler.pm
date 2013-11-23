@@ -6,7 +6,7 @@ BEGIN {
   $MetaPOD::Assembler::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $MetaPOD::Assembler::VERSION = '0.2.5';
+  $MetaPOD::Assembler::VERSION = '0.3.0';
 }
 
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
@@ -119,7 +119,7 @@ MetaPOD::Assembler - Glue layer that dispatches segments to a constructed Result
 
 =head1 VERSION
 
-version 0.2.5
+version 0.3.0
 
 =head1 SYNOPSIS
 

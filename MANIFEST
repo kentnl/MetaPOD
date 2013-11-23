@@ -2,6 +2,9 @@
 .travis.yml
 Build.PL
 Changes
+Changes.deps
+Changes.deps.all
+Changes.deps.dev
 LICENSE
 MANIFEST
 META.json
@@ -28,10 +31,17 @@ lib/MetaPOD/Result.pm
 lib/MetaPOD/Role/Format.pm
 lib/MetaPOD/Spec.pm
 maint-travis-ci/README.mkdn
+maint-travis-ci/before_script.pl
+maint-travis-ci/install_deps.pl
+maint-travis-ci/lib/tools.pm
 maint-travis-ci/merge_travis_yml.pl
+maint-travis-ci/report_fail_ctx.pl
+maint-travis-ci/script.pl
 maint-travis-ci/sterilize_env.pl
 maint-travis-ci/sync_tree.pl
+maint-travis-ci/yamls/sterile.mkdn
 maint-travis-ci/yamls/sterile.yaml
+maint-travis-ci/yamls/sterile2.yaml
 perlcritic.rc
 t/00-compile/lib_MetaPOD_Assembler_pm.t
 t/00-compile/lib_MetaPOD_Exception_Decode_Data_pm.t
