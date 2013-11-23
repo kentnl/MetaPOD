@@ -4,7 +4,7 @@ MetaPOD - An evolution of POD
 
 # VERSION
 
-version 0.2.4
+version 0.2.5
 
 { "namespace":"MetaPOD" }
 
@@ -39,12 +39,12 @@ In that vein, I hope to make a `Dist::Zilla` plug-in that does this for you.
 
 In the mean time, the documents you want to be reading are
 
-- [`MetaPOD::Spec`](http://search.cpan.org/perldoc?MetaPOD::Spec) - The general specification for all forms of MetaPOD
-- [`MetaPOD::JSON`](http://search.cpan.org/perldoc?MetaPOD::JSON) - Information specific to the `JSON` based implementation of MetaPOD
+- [`MetaPOD::Spec`](https://metacpan.org/pod/MetaPOD::Spec) - The general specification for all forms of MetaPOD
+- [`MetaPOD::JSON`](https://metacpan.org/pod/MetaPOD::JSON) - Information specific to the `JSON` based implementation of MetaPOD
 
 # People who are wanting to read MetaPOD
 
-- [`MetaPOD::Assembler`](http://search.cpan.org/perldoc?MetaPOD::Assembler) - The tool that translates documents containing `MetaPOD` into [`MetaPOD::Result` Objects](http://search.cpan.org/perldoc?MetaPOD::Result)
+- [`MetaPOD::Assembler`](https://metacpan.org/pod/MetaPOD::Assembler) - The tool that translates documents containing `MetaPOD` into [`MetaPOD::Result` Objects](https://metacpan.org/pod/MetaPOD::Result)
 
 # AUTHOR
 
