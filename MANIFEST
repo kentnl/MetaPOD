@@ -28,10 +28,8 @@ lib/MetaPOD/Assembler.pm
 lib/MetaPOD/Exception.pm
 lib/MetaPOD/Exception/Decode/Data.pm
 lib/MetaPOD/Extractor.pm
-lib/MetaPOD/JSON.pm
 lib/MetaPOD/Result.pm
 lib/MetaPOD/Role/Format.pm
-lib/MetaPOD/Spec.pm
 maint-travis-ci/README.mkdn
 maint-travis-ci/before_script.pl
 maint-travis-ci/install_deps.pl
@@ -49,10 +47,8 @@ t/00-compile/lib_MetaPOD_Assembler_pm.t
 t/00-compile/lib_MetaPOD_Exception_Decode_Data_pm.t
 t/00-compile/lib_MetaPOD_Exception_pm.t
 t/00-compile/lib_MetaPOD_Extractor_pm.t
-t/00-compile/lib_MetaPOD_JSON_pm.t
 t/00-compile/lib_MetaPOD_Result_pm.t
 t/00-compile/lib_MetaPOD_Role_Format_pm.t
-t/00-compile/lib_MetaPOD_Spec_pm.t
 t/00-compile/lib_MetaPOD_pm.t
 t/000-report-versions-tiny.t
 t/01-extractor/01-basic.t
