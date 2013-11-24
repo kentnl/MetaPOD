@@ -1,5 +1,7 @@
 Release history for MetaPOD
 
+0.3.1 2013-11-24T03:52:44Z
+
 0.3.0 2013-11-23T06:39:27Z
  [00 FORK]
  - MetaPOD::Format::JSON is now shipped seperately.
