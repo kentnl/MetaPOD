@@ -1,10 +1,11 @@
 Release history for MetaPOD
 
-0.3.5 2013-11-24T03:55:01Z
+0.3.5 2013-11-24T10:29:19Z
  [00 Further Forking]
- - MetaPOD::Spec and MetaPOD::JSON are no longer part of the core MetaPOD distribution.
+ - MetaPOD::Spec and MetaPOD::JSON are no longer part of the core MetaPOD
+   distribution.
  - MetaPOD will be purely functional code.
- 
+
  [Dependencies::Stats]
  - Dependencies changed, see Changes.deps{,.all,.dev} for details
  - develop: ↑1
