@@ -60,6 +60,8 @@ resources:
   repository: https://github.com/kentfredric/MetaPOD.git
 version: 0.3.5
 x_BuiltWith:
+  failures:
+    Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 'module was not found in INC'
   modules:
     Carp: 1.32
     Data::Dump: 1.22
@@ -106,7 +108,6 @@ x_BuiltWith:
     Dist::Zilla::Plugin::Twitter: 0.023
     Dist::Zilla::Plugin::UploadToCPAN: 5.006
     Dist::Zilla::PluginBundle::Author::KENTNL: 2.004001
-    Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
     FindBin: 1.51
     List::AllUtils: 0.07
     Module::Build: 0.4202
@@ -130,12 +131,12 @@ x_BuiltWith:
     version: 0.9904
     warnings: 1.20
   perl:
-    original: v5.19.5
+    original: v5.19.6
     qv: 1
     version:
       - 5
       - 19
-      - 5
+      - 6
   perl-config:
     gccversion: 4.7.3
     myarchname: x86_64-linux
@@ -144,7 +145,7 @@ x_BuiltWith:
   uname: 'Linux 3.12.0-gentoo x86_64 GenuineIntel GNU/Linux'
 x_Dist_Zilla:
   perl:
-    version: 5.019005
+    version: 5.019006
   plugins:
     -
       class: Dist::Zilla::Plugin::Git::NextVersion
@@ -293,9 +294,9 @@ x_Dist_Zilla:
               name: '@CorePrep/H1Nester'
               version: 4.004
             -
-              class: Pod::Weaver::Plugin::Encoding
-              name: '-Encoding'
-              version: 0.02
+              class: Pod::Weaver::Plugin::SingleEncoding
+              name: '-SingleEncoding'
+              version: 4.004
             -
               class: Pod::Weaver::Section::Name
               name: Name
