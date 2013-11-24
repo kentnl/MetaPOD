@@ -111,31 +111,31 @@
    "provides" : {
       "MetaPOD" : {
          "file" : "lib/MetaPOD.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       },
       "MetaPOD::Assembler" : {
          "file" : "lib/MetaPOD/Assembler.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       },
       "MetaPOD::Exception" : {
          "file" : "lib/MetaPOD/Exception.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       },
       "MetaPOD::Exception::Decode::Data" : {
          "file" : "lib/MetaPOD/Exception/Decode/Data.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       },
       "MetaPOD::Extractor" : {
          "file" : "lib/MetaPOD/Extractor.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       },
       "MetaPOD::Result" : {
          "file" : "lib/MetaPOD/Result.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       },
       "MetaPOD::Role::Format" : {
          "file" : "lib/MetaPOD/Role/Format.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.3.5"
       }
    },
    "release_status" : "stable",
@@ -150,7 +150,7 @@
          "web" : "https://github.com/kentfredric/MetaPOD"
       }
    },
-   "version" : "0.3.1",
+   "version" : "0.3.5",
    "x_BuiltWith" : {
       "modules" : {
          "Carp" : "1.32",
