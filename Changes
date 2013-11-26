@@ -1,6 +1,9 @@
 Release history for MetaPOD
 
 {{$NEXT}}
+ [Dependencies::Stats]
+ - Dependencies changed, see Changes.deps{,.all,.dev} for details
+ - develop: +1
 
 0.3.5 2013-11-24T10:37:17Z
  [00 Further Forking]
