@@ -7,10 +7,10 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "Module::Build" => "0.4202"
+    "Module::Build" => "0.4203"
   },
   "configure_requires" => {
-    "Module::Build" => "0.4202"
+    "Module::Build" => "0.4203"
   },
   "dist_abstract" => "An evolution of POD",
   "dist_author" => [
@@ -50,7 +50,7 @@ my %module_build_args = (
 
 my %fallback_build_requires = (
   "FindBin" => 0,
-  "Module::Build" => "0.4202",
+  "Module::Build" => "0.4203",
   "Path::Iterator::Rule" => 0,
   "Path::Tiny" => 0,
   "Test::Fatal" => 0,

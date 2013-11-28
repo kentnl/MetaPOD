@@ -4,14 +4,14 @@ author:
   - 'Kent Fredric <kentfredric@gmail.com>'
 build_requires:
   FindBin: 0
-  Module::Build: 0.4202
+  Module::Build: 0.4203
   Path::Iterator::Rule: 0
   Path::Tiny: 0
   Test::Fatal: 0
   Test::More: 1.001002
   Test::Requires: 0
 configure_requires:
-  Module::Build: 0.4202
+  Module::Build: 0.4203
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830'
 license: perl
@@ -80,7 +80,7 @@ x_BuiltWith:
     Dist::Zilla::Plugin::Manifest: 5.006
     Dist::Zilla::Plugin::ManifestSkip: 5.006
     Dist::Zilla::Plugin::MetaConfig: 5.006
-    Dist::Zilla::Plugin::MetaData::BuiltWith: 0.04000001
+    Dist::Zilla::Plugin::MetaData::BuiltWith: 0.04000002
     Dist::Zilla::Plugin::MetaJSON: 5.006
     Dist::Zilla::Plugin::MetaProvides::Package: 1.15000001
     Dist::Zilla::Plugin::MetaTests: 5.006
@@ -103,19 +103,19 @@ x_BuiltWith:
     Dist::Zilla::Plugin::Test::MinimumVersion: 2.000005
     Dist::Zilla::Plugin::Test::Perl::Critic: 2.112410
     Dist::Zilla::Plugin::TestRelease: 5.006
-    Dist::Zilla::Plugin::Twitter: 0.023
+    Dist::Zilla::Plugin::Twitter: 0.024
     Dist::Zilla::Plugin::UploadToCPAN: 5.006
     Dist::Zilla::PluginBundle::Author::KENTNL: 2.004001
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
     FindBin: 1.51
     List::AllUtils: 0.07
     MetaPOD::Format::JSON: 0.3.0
-    Module::Build: 0.4202
+    Module::Build: 0.4203
     Module::Runtime: 0.013
     Moo: 1.003001
     Moo::Role: 1.003001
     Path::Iterator::Rule: 1.006
-    Path::Tiny: 0.046
+    Path::Tiny: 0.047
     Pod::Coverage::TrustPod: 0.100003
     Pod::Eventual: 0.094001
     Test::CPAN::Changes: 0.26
@@ -189,7 +189,7 @@ x_Dist_Zilla:
               - '-i'
             uname_call: uname
       name: '@Author::KENTNL/MetaData::BuiltWith'
-      version: 0.04000001
+      version: 0.04000002
     -
       class: Dist::Zilla::Plugin::Git::GatherDir
       name: '@Author::KENTNL/Git::GatherDir'
@@ -442,7 +442,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Twitter
       name: '@Author::KENTNL/Twitter'
-      version: 0.023
+      version: 0.024
     -
       class: Dist::Zilla::Plugin::Prereqs::MatchInstalled
       config:
