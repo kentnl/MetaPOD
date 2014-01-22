@@ -6,6 +6,8 @@ package MetaPOD::Role::Format;
 $MetaPOD::Role::Format::VERSION = '0.3.6';
 # ABSTRACT: Base role for common format routines
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moo::Role;
 use Carp qw( croak );
 use version 0.77;

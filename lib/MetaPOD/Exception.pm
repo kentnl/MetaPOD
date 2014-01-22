@@ -7,6 +7,8 @@ use Moo;
 
 # ABSTRACT: Base class for C<MetaPOD> exceptions.
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

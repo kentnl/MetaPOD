@@ -6,6 +6,8 @@ package MetaPOD::Exception::Decode::Data;
 $MetaPOD::Exception::Decode::Data::VERSION = '0.3.6';
 # ABSTRACT: Failures with decoding source data
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moo;
 
 

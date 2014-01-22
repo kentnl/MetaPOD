@@ -4,6 +4,9 @@ use warnings;
 package MetaPOD::Extractor;
 $MetaPOD::Extractor::VERSION = '0.3.6';
 # ABSTRACT: Extract MetaPOD declarations from a file.
+
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moo;
 extends 'Pod::Eventual';
 

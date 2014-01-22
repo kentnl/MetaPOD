@@ -5,6 +5,8 @@ package MetaPOD;
 $MetaPOD::VERSION = '0.3.6';
 # ABSTRACT: An evolution of POD
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

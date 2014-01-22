@@ -5,6 +5,8 @@ package MetaPOD::Assembler;
 $MetaPOD::Assembler::VERSION = '0.3.6';
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 

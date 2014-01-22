@@ -6,6 +6,8 @@ package MetaPOD::Result;
 $MetaPOD::Result::VERSION = '0.3.6';
 # ABSTRACT: Compiled aggregate result object for MetaPOD
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 
