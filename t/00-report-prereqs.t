@@ -16,20 +16,70 @@ my @modules = qw(
   CPAN::Meta::Requirements
   Carp
   Data::Dump
+  Dist::Zilla::Plugin::Authority
+  Dist::Zilla::Plugin::AutoPrereqs
+  Dist::Zilla::Plugin::ConfirmRelease
+  Dist::Zilla::Plugin::EOLTests
+  Dist::Zilla::Plugin::Git::Check
+  Dist::Zilla::Plugin::Git::Commit
+  Dist::Zilla::Plugin::Git::CommitBuild
+  Dist::Zilla::Plugin::Git::GatherDir
+  Dist::Zilla::Plugin::Git::NextRelease
+  Dist::Zilla::Plugin::Git::NextVersion::Sanitized
+  Dist::Zilla::Plugin::Git::Tag
+  Dist::Zilla::Plugin::GithubMeta
+  Dist::Zilla::Plugin::License
+  Dist::Zilla::Plugin::Manifest
+  Dist::Zilla::Plugin::ManifestSkip
+  Dist::Zilla::Plugin::MetaConfig
+  Dist::Zilla::Plugin::MetaData::BuiltWith
+  Dist::Zilla::Plugin::MetaJSON
+  Dist::Zilla::Plugin::MetaProvides::Package
+  Dist::Zilla::Plugin::MetaTests
+  Dist::Zilla::Plugin::MetaYAML
+  Dist::Zilla::Plugin::MinimumPerl
+  Dist::Zilla::Plugin::ModuleBuild
+  Dist::Zilla::Plugin::PkgVersion
+  Dist::Zilla::Plugin::PodCoverageTests
+  Dist::Zilla::Plugin::PodSyntaxTests
+  Dist::Zilla::Plugin::PodWeaver
+  Dist::Zilla::Plugin::Prereqs
+  Dist::Zilla::Plugin::Prereqs::MatchInstalled
+  Dist::Zilla::Plugin::ReadmeAnyFromPod
+  Dist::Zilla::Plugin::ReadmeFromPod
+  Dist::Zilla::Plugin::RunExtraTests
+  Dist::Zilla::Plugin::Test::CPAN::Changes
+  Dist::Zilla::Plugin::Test::Compile::PerFile
+  Dist::Zilla::Plugin::Test::Kwalitee
+  Dist::Zilla::Plugin::Test::MinimumVersion
+  Dist::Zilla::Plugin::Test::Perl::Critic
+  Dist::Zilla::Plugin::Test::ReportPrereqs
+  Dist::Zilla::Plugin::TestRelease
+  Dist::Zilla::Plugin::Twitter
+  Dist::Zilla::Plugin::UploadToCPAN
+  Dist::Zilla::PluginBundle::Author::KENTNL
+  Dist::Zilla::PluginBundle::Author::KENTNL::Lite
   ExtUtils::MakeMaker
   File::Spec::Functions
   FindBin
   List::AllUtils
   List::Util
+  MetaPOD::Format::JSON
   Module::Build
   Module::Runtime
   Moo
   Moo::Role
   Path::Iterator::Rule
   Path::Tiny
+  Pod::Coverage::TrustPod
   Pod::Eventual
+  Test::CPAN::Changes
+  Test::CPAN::Meta
   Test::Fatal
+  Test::Kwalitee
   Test::More
+  Test::Pod
+  Test::Pod::Coverage
   Test::Requires
   Throwable::Error
   perl
