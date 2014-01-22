@@ -3,13 +3,7 @@ use strict;
 use warnings;
 
 package MetaPOD::Role::Format;
-BEGIN {
-  $MetaPOD::Role::Format::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Role::Format::VERSION = '0.3.6';
-}
-
+$MetaPOD::Role::Format::VERSION = '0.3.6';
 # ABSTRACT: Base role for common format routines
 
 use Moo::Role;
@@ -17,13 +11,57 @@ use Carp qw( croak );
 use version 0.77;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 sub supported_versions { return qw( v1.0.0 ) }
+
+
+
+
+
+
+
+
+
 
 
 sub _supported_versions {
   my $class = shift;
   return map { version->parse($_) } $class->supported_versions;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 sub supports_version {
@@ -107,7 +145,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

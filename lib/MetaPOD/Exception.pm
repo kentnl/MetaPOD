@@ -2,16 +2,21 @@ use strict;
 use warnings;
 
 package MetaPOD::Exception;
-BEGIN {
-  $MetaPOD::Exception::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Exception::VERSION = '0.3.6';
-}
-
+$MetaPOD::Exception::VERSION = '0.3.6';
 use Moo;
 
 # ABSTRACT: Base class for C<MetaPOD> exceptions.
+
+
+
+
+
+
+
+
+
+
+
 
 
 extends 'Throwable::Error';
@@ -51,7 +56,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

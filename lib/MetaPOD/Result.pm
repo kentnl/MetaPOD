@@ -3,18 +3,28 @@ use strict;
 use warnings;
 
 package MetaPOD::Result;
-BEGIN {
-  $MetaPOD::Result::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Result::VERSION = '0.3.6';
-}
-
+$MetaPOD::Result::VERSION = '0.3.6';
 # ABSTRACT: Compiled aggregate result object for MetaPOD
+
+
+
+
+
+
+
+
+
+
+
 
 
 use Moo;
 use List::AllUtils qw( uniq );
+
+
+
+
+
 
 
 has namespace => (
@@ -54,10 +64,20 @@ has interface => (
 );
 
 
+
+
+
+
+
 sub inherits {
   my $self = shift;
   return @{ $self->_inherits };
 }
+
+
+
+
+
 
 
 sub set_inherits {
@@ -67,6 +87,11 @@ sub set_inherits {
 }
 
 
+
+
+
+
+
 sub add_inherits {
   my ( $self, @items ) = @_;
   $self->_set_inherits( [ uniq @{ $self->_inherits }, @items ] );
@@ -74,10 +99,20 @@ sub add_inherits {
 }
 
 
+
+
+
+
+
 sub does {
   my $self = shift;
   return @{ $self->_does };
 }
+
+
+
+
+
 
 
 sub set_does {
@@ -87,11 +122,21 @@ sub set_does {
 }
 
 
+
+
+
+
+
 sub add_does {
   my ( $self, @items ) = @_;
   $self->_set_does( [ uniq @{ $self->_does }, @items ] );
   return $self;
 }
+
+
+
+
+
 
 
 sub interface {
@@ -100,11 +145,21 @@ sub interface {
 }
 
 
+
+
+
+
+
 sub set_interface {
   my ( $self, @interfaces ) = @_;
   $self->_set_interface( [ uniq @interfaces ] );
   return $self;
 }
+
+
+
+
+
 
 
 sub add_interface {
@@ -188,7 +243,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

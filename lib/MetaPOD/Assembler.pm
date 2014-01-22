@@ -2,19 +2,47 @@ use strict;
 use warnings;
 
 package MetaPOD::Assembler;
-BEGIN {
-  $MetaPOD::Assembler::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Assembler::VERSION = '0.3.6';
-}
-
+$MetaPOD::Assembler::VERSION = '0.3.6';
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 use Moo;
 use Carp qw( croak );
 use Module::Runtime qw( use_module );
+
+
+
 
 
 has 'result' => (
@@ -27,6 +55,9 @@ has 'result' => (
   },
   clearer => 'clear_result',
 );
+
+
+
 
 
 has extractor => (
@@ -46,6 +77,9 @@ has extractor => (
 );
 
 
+
+
+
 has format_map => (
   is       => ro =>,
   required => 1,
@@ -56,12 +90,22 @@ has format_map => (
 );
 
 
+
+
+
+
+
 sub assemble_handle {
   my ( $self, $handle ) = @_;
   $self->clear_result;
   $self->extractor->read_handle($handle);
   return $self->result;
 }
+
+
+
+
+
 
 
 sub assemble_file {
@@ -72,12 +116,22 @@ sub assemble_file {
 }
 
 
+
+
+
+
+
 sub assemble_string {
   my ( $self, $string ) = @_;
   $self->clear_result;
   $self->extractor->read_string($string);
   return $self->result;
 }
+
+
+
+
+
 
 
 sub get_class_for_format {
@@ -87,6 +141,18 @@ sub get_class_for_format {
   }
   return $self->format_map->{$format};
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 sub handle_segment {
@@ -194,7 +260,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

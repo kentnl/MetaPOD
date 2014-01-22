@@ -2,16 +2,21 @@ use strict;
 use warnings;
 
 package MetaPOD::Extractor;
-BEGIN {
-  $MetaPOD::Extractor::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Extractor::VERSION = '0.3.6';
-}
-
+$MetaPOD::Extractor::VERSION = '0.3.6';
 # ABSTRACT: Extract MetaPOD declarations from a file.
 use Moo;
 extends 'Pod::Eventual';
+
+
+
+
+
+
+
+
+
+
+
 
 
 use Data::Dump qw(pp);
@@ -76,12 +81,22 @@ has end_segment_callback => (
 );
 
 
+
+
+
+
+
 has segment_cache => (
   is      => ro  =>,
   lazy    => 1,
   writer  => 'set_segment_cache',
   builder => sub { {} },
 );
+
+
+
+
+
 
 
 has segments => (
@@ -93,6 +108,16 @@ has segments => (
 
 
 
+
+
+
+
+
+
+
+
+
+
 has in_segment => (
   is      => ro  =>,
   lazy    => 1,
@@ -100,6 +125,11 @@ has in_segment => (
   clearer => 'unset_in_segment',
   builder => sub { undef },
 );
+
+
+
+
+
 
 
 sub begin_segment {
@@ -116,6 +146,11 @@ sub begin_segment {
 }
 
 
+
+
+
+
+
 sub end_segment {
   my ($self) = @_;
   my $segment = $self->segment_cache;
@@ -128,12 +163,22 @@ sub end_segment {
 }
 
 
+
+
+
+
+
 sub append_segment_data {
   my ( $self, $data ) = @_;
   $self->segment_cache->{data} ||= q{};
   $self->segment_cache->{data} .= $data;
   return $self;
 }
+
+
+
+
+
 
 
 sub add_segment {
@@ -152,6 +197,11 @@ sub add_segment {
 }
 
 
+
+
+
+
+
 sub handle_begin {
   my ( $self, $event ) = @_;
   if ( $self->in_segment ) {
@@ -165,6 +215,11 @@ sub handle_begin {
   }
   return $self->handle_ignored($event);
 }
+
+
+
+
+
 
 
 sub handle_end {
@@ -190,6 +245,11 @@ sub handle_end {
 }
 
 
+
+
+
+
+
 sub handle_for {
   my ( $self, $event ) = @_;
   if ( $event->{content} =~ $self->regexp_for_with_version ) {
@@ -202,10 +262,20 @@ sub handle_for {
 }
 
 
+
+
+
+
+
 sub handle_cut {
   my ( $self, $element ) = @_;
   return $self->handle_ignored($element);
 }
+
+
+
+
+
 
 
 sub handle_text {
@@ -215,12 +285,22 @@ sub handle_text {
 }
 
 
+
+
+
+
+
 sub handle_ignored {
   my ( $self, $element ) = @_;
   if ( $self->in_segment ) {
     croak 'Unexpected type ' . $element->{type} . ' inside segment ' . pp($element) . ' at line' . $element->{start_line};
   }
 }
+
+
+
+
+
 
 
 sub handle_event {
@@ -333,7 +413,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
