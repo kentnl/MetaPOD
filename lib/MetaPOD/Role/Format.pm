@@ -6,6 +6,8 @@ package MetaPOD::Role::Format;
 
 # ABSTRACT: Base role for common format routines
 
+# AUTHORITY
+
 use Moo::Role;
 use Carp qw( croak );
 use version 0.77;

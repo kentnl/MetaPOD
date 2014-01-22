@@ -4,6 +4,9 @@ use warnings;
 package MetaPOD::Extractor;
 
 # ABSTRACT: Extract MetaPOD declarations from a file.
+
+# AUTHORITY
+
 use Moo;
 extends 'Pod::Eventual';
 

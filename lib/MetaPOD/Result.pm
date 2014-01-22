@@ -6,6 +6,8 @@ package MetaPOD::Result;
 
 # ABSTRACT: Compiled aggregate result object for MetaPOD
 
+# AUTHORITY
+
 =begin MetaPOD::JSON v1.1.0
 
 {

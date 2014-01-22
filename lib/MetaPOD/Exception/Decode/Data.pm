@@ -6,6 +6,8 @@ package MetaPOD::Exception::Decode::Data;
 
 # ABSTRACT: Failures with decoding source data
 
+# AUTHORITY
+
 use Moo;
 
 =begin MetaPOD::JSON v1.1.0

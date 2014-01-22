@@ -7,6 +7,8 @@ use Moo;
 
 # ABSTRACT: Base class for C<MetaPOD> exceptions.
 
+# AUTHORITY
+
 =begin MetaPOD::JSON v1.1.0
 
 {

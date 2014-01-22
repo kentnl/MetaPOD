@@ -5,6 +5,8 @@ package MetaPOD::Assembler;
 
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
+# AUTHORITY
+
 =head1 SYNOPSIS
 
     use MetaPOD::Assembler;
