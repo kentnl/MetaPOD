@@ -334,12 +334,12 @@ sub handle_ignored {
 sub handle_event {
   my ( $self, $event ) = @_;
   for my $command (qw( begin end for cut )) {
-    last unless $event->{type} eq 'command';
+    last unless 'command' eq $event->{type};
     next unless $event->{command} eq $command;
     my $method = $self->can( 'handle_' . $command );
     return $self->$method($event);
   }
-  if ( $event->{type} eq 'text' ) {
+  if ( 'text' eq $event->{type} ) {
     return $self->handle_text($event);
   }
   return $self->handle_ignored($event);
