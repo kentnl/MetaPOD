@@ -104,7 +104,7 @@ has end_segment_callback => (
   is      => ro =>,
   lazy    => 1,
   builder => sub {
-    sub { }
+    return sub { };
   },
 );
 
@@ -167,7 +167,7 @@ sub begin_segment {
       format     => $format,
       start_line => $start_line,
       ( defined $version ? ( version => $version ) : () ),
-    }
+    },
   );
   $self->set_in_segment(1);
   return $self;
