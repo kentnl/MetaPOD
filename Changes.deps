@@ -1,4 +1,26 @@
-0.3.5
+0.3.6
+ [Added / runtime requires]
+ - utf8
+
+ [Added / test recommends]
+ - CPAN::Meta
+ - CPAN::Meta::Requirements
+
+ [Added / test requires]
+ - ExtUtils::MakeMaker
+ - File::Spec::Functions
+ - List::Util
+
+ [Changed / build requires]
+ - Module::Build 0.4202 → 0.4204
+
+ [Changed / configure requires]
+ - Module::Build 0.4202 → 0.4204
+
+ [Changed / runtime requires]
+ - perl 5.006 → 5.008
+
+0.3.5 2013-11-24T10:37:17Z
 
 0.3.0 2013-11-23T06:39:27Z
  [Added / test requires]
