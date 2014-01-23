@@ -9,7 +9,7 @@ package MetaPOD::Exception::Decode::Data;
 
 # AUTHORITY
 
-use Moo;
+use Moo qw( has extends );
 
 =begin MetaPOD::JSON v1.1.0
 
