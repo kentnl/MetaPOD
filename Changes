@@ -1,6 +1,9 @@
 Release history for MetaPOD
 
 {{$NEXT}}
+ [00 Minor]
+ - Tooling/Documentation minor adjustments.
+
  [Dependencies::Stats]
  - Dependencies changed, see Changes.deps{,.all,.dev} for details
  - develop: +1
