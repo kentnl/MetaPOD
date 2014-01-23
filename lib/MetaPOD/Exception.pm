@@ -7,7 +7,7 @@ package MetaPOD::Exception;
 
 use Moo qw( extends );
 
-# ABSTRACT: Base class for C<MetaPOD> exceptions.
+# ABSTRACT: Base class for MetaPOD exceptions.
 
 # AUTHORITY
 
