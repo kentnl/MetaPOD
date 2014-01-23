@@ -21,7 +21,7 @@ package MetaPOD::Result;
 
 =cut
 
-use Moo;
+use Moo qw( has );
 use List::AllUtils qw( uniq );
 
 =method set_namespace
