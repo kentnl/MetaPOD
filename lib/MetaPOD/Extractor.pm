@@ -210,11 +210,11 @@ sub append_segment_data {
 
 
 sub add_segment {
-  my ( $self, $format, $version, $data, $start_line ) = @_;
+  my ( $self, $format, $version, $section_data, $start_line ) = @_;
   my $segment = {};
   $segment->{format}     = $format;
   $segment->{version}    = $version if defined $version;
-  $segment->{data}       = $data;
+  $segment->{data}       = $section_data;
   $segment->{start_line} = $start_line if defined $start_line;
 
   push @{ $self->segments }, $segment;

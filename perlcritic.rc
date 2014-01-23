@@ -772,7 +772,7 @@ stop_words = MetaPOD deduplicated behaviour unrecognised
 
 
 # Use exceptions instead of `die', `croak', or `confess'.
-[-ErrorHandling::RequireUseOfExceptions]
+[ErrorHandling::RequireUseOfExceptions]
 # set_themes                         = maintenance more
 # add_themes                         =
 # severity                           = 4
