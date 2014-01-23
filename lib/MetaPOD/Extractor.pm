@@ -24,6 +24,7 @@ extends 'Pod::Eventual';
 
 =cut
 
+## no critic (Bangs::ProhibitDebuggingModule)
 use Data::Dump qw(pp);
 use Carp qw(croak);
 
