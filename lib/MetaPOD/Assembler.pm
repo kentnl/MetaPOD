@@ -152,7 +152,7 @@ sub get_class_for_format {
 
 
 This is the callback point of entry that dispatches calls from the C<MetaPOD::Extractor>,
-loads and calls the relevant C<Format> ( via L</get_class_for_format>, validates
+loads and calls the relevant C<Format> ( via L</get_class_for_format> ), validates
 that version specifications are supported ( via C<< Format->supports_version($v) >> )
 and then asks the given format to modify the current C<MetaPOD::Result> object
 by parsing the given C<$segment_hash>
