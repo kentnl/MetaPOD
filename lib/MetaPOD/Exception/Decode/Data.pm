@@ -1,6 +1,7 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Exception::Decode::Data;
 $MetaPOD::Exception::Decode::Data::VERSION = '0.3.6';
@@ -8,7 +9,7 @@ $MetaPOD::Exception::Decode::Data::VERSION = '0.3.6';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-use Moo;
+use Moo qw( has extends );
 
 
 
