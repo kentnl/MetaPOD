@@ -9,7 +9,7 @@ package MetaPOD::Extractor;
 
 # AUTHORITY
 
-use Moo;
+use Moo qw( extends has );
 extends 'Pod::Eventual';
 
 =begin MetaPOD::JSON v1.1.0
