@@ -1,4 +1,4 @@
-use 5.008; # utf8
+use 5.008;    # utf8
 use strict;
 use warnings;
 use utf8;
@@ -29,22 +29,24 @@ use Data::Dump qw(pp);
 use Carp qw(croak);
 
 has formatter_regexp => (
-  is      => ro  =>,
+  is      => ro =>,
   lazy    => 1,
-  builder => sub { 
-      # _Pulp__5010_qr_m_propagate_properly
-      ## no critic (Compatibility::PerlMinimumVersionAndWhy)
-      return qr/MetaPOD::([^[:space:]]+)/sxm;
+  builder => sub {
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr/MetaPOD::([^[:space:]]+)/sxm;
   },
 );
 
 has version_regexp => (
-  is      => ro  =>,
+  is      => ro =>,
   lazy    => 1,
   builder => sub {
-      # _Pulp__5010_qr_m_propagate_properly
-      ## no critic (Compatibility::PerlMinimumVersionAndWhy)
-      return qr/(v[[:digit:].]+)/sxm;
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr/(v[[:digit:].]+)/sxm;
   },
 );
 
@@ -54,6 +56,7 @@ has regexp_begin_with_version => (
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
     my $version_regexp   = $_[0]->version_regexp;
+
     # _Pulp__5010_qr_m_propagate_properly
     ## no critic (Compatibility::PerlMinimumVersionAndWhy)
     return qr{ ^ ${formatter_regexp} \s+ ${version_regexp} \s* $ }smx;
@@ -65,6 +68,7 @@ has regexp_begin => (
   lazy    => 1,
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
+
     # _Pulp__5010_qr_m_propagate_properly
     ## no critic (Compatibility::PerlMinimumVersionAndWhy)
     return qr{ ^ ${formatter_regexp} \s* $ }smx;
@@ -77,6 +81,7 @@ has regexp_for_with_version => (
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
     my $version_regexp   = $_[0]->version_regexp;
+
     # _Pulp__5010_qr_m_propagate_properly
     ## no critic (Compatibility::PerlMinimumVersionAndWhy)
     return qr{ ^ ${formatter_regexp} \s+ ${version_regexp} \s+ ( .*$ ) }smx;
@@ -88,6 +93,7 @@ has regexp_for => (
   lazy    => 1,
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
+
     # _Pulp__5010_qr_m_propagate_properly
     ## no critic (Compatibility::PerlMinimumVersionAndWhy)
     return qr{ ^ ${formatter_regexp} \s+ ( .* $ ) $ }smx;
@@ -161,7 +167,7 @@ sub begin_segment {
       format     => $format,
       start_line => $start_line,
       ( defined $version ? ( version => $version ) : () ),
-    }
+    },
   );
   $self->set_in_segment(1);
   return $self;
@@ -191,9 +197,9 @@ sub end_segment {
 
 
 sub append_segment_data {
-  my ( $self, $data ) = @_;
+  my ( $self, $segment_data ) = @_;
   $self->segment_cache->{data} ||= q{};
-  $self->segment_cache->{data} .= $data;
+  $self->segment_cache->{data} .= $segment_data;
   return $self;
 }
 
@@ -328,12 +334,12 @@ sub handle_ignored {
 sub handle_event {
   my ( $self, $event ) = @_;
   for my $command (qw( begin end for cut )) {
-    last unless $event->{type} eq 'command';
+    last unless 'command' eq $event->{type};
     next unless $event->{command} eq $command;
     my $method = $self->can( 'handle_' . $command );
     return $self->$method($event);
   }
-  if ( $event->{type} eq 'text' ) {
+  if ( 'text' eq $event->{type} ) {
     return $self->handle_text($event);
   }
   return $self->handle_ignored($event);
