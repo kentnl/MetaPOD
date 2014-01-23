@@ -1,11 +1,13 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Exception;
 $MetaPOD::Exception::VERSION = '0.3.6';
-use Moo;
+use Moo qw( extends );
 
-# ABSTRACT: Base class for C<MetaPOD> exceptions.
+# ABSTRACT: Base class for MetaPOD exceptions.
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
@@ -35,7 +37,7 @@ __END__
 
 =head1 NAME
 
-MetaPOD::Exception - Base class for C<MetaPOD> exceptions.
+MetaPOD::Exception - Base class for MetaPOD exceptions.
 
 =head1 VERSION
 
