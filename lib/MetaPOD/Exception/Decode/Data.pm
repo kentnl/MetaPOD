@@ -1,24 +1,42 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Exception::Decode::Data;
-BEGIN {
-  $MetaPOD::Exception::Decode::Data::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Exception::Decode::Data::VERSION = '0.3.5';
-}
-
+$MetaPOD::Exception::Decode::Data::VERSION = '0.3.6';
 # ABSTRACT: Failures with decoding source data
 
-use Moo;
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+use Moo qw( has extends );
+
+
+
+
+
+
+
+
+
+
+
 
 
 extends 'MetaPOD::Exception';
 
 
+
+
+
+
+
 has 'data' => ( is => ro =>, required => 1, );
+
+
+
+
+
 
 
 has 'internal_message' => ( is => ro =>, required => 1, );
@@ -45,7 +63,7 @@ MetaPOD::Exception::Decode::Data - Failures with decoding source data
 
 =head1 VERSION
 
-version 0.3.5
+version 0.3.6
 
 =head1 ATTRIBUTES
 
@@ -74,7 +92,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

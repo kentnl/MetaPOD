@@ -1,17 +1,26 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Exception;
-BEGIN {
-  $MetaPOD::Exception::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Exception::VERSION = '0.3.5';
-}
+$MetaPOD::Exception::VERSION = '0.3.6';
+use Moo qw( extends );
 
-use Moo;
+# ABSTRACT: Base class for MetaPOD exceptions.
 
-# ABSTRACT: Base class for C<MetaPOD> exceptions.
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+
+
+
+
+
+
+
+
+
+
 
 
 extends 'Throwable::Error';
@@ -28,11 +37,11 @@ __END__
 
 =head1 NAME
 
-MetaPOD::Exception - Base class for C<MetaPOD> exceptions.
+MetaPOD::Exception - Base class for MetaPOD exceptions.
 
 =head1 VERSION
 
-version 0.3.5
+version 0.3.6
 
 =begin MetaPOD::JSON v1.1.0
 
@@ -51,7 +60,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

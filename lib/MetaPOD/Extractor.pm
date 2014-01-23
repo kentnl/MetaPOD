@@ -1,32 +1,53 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Extractor;
-BEGIN {
-  $MetaPOD::Extractor::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Extractor::VERSION = '0.3.5';
-}
-
+$MetaPOD::Extractor::VERSION = '0.3.6';
 # ABSTRACT: Extract MetaPOD declarations from a file.
-use Moo;
+
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+use Moo qw( extends has );
 extends 'Pod::Eventual';
 
 
+
+
+
+
+
+
+
+
+
+
+
+## no critic (Bangs::ProhibitDebuggingModule)
 use Data::Dump qw(pp);
 use Carp qw(croak);
 
 has formatter_regexp => (
-  is      => ro  =>,
+  is      => ro =>,
   lazy    => 1,
-  builder => sub { qr/MetaPOD::([^[:space:]]+)/sxm },
+  builder => sub {
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr/MetaPOD::([^[:space:]]+)/sxm;
+  },
 );
 
 has version_regexp => (
-  is      => ro  =>,
+  is      => ro =>,
   lazy    => 1,
-  builder => sub { qr/(v[[:digit:].]+)/sxm },
+  builder => sub {
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr/(v[[:digit:].]+)/sxm;
+  },
 );
 
 has regexp_begin_with_version => (
@@ -35,7 +56,10 @@ has regexp_begin_with_version => (
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
     my $version_regexp   = $_[0]->version_regexp;
-    qr{ ^ ${formatter_regexp} \s+ ${version_regexp} \s* $ }smx;
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr{ ^ ${formatter_regexp} \s+ ${version_regexp} \s* $ }smx;
   },
 );
 
@@ -44,7 +68,10 @@ has regexp_begin => (
   lazy    => 1,
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
-    qr{ ^ ${formatter_regexp} \s* $ }smx;
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr{ ^ ${formatter_regexp} \s* $ }smx;
   },
 );
 
@@ -54,7 +81,10 @@ has regexp_for_with_version => (
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
     my $version_regexp   = $_[0]->version_regexp;
-    qr{ ^ ${formatter_regexp} \s+ ${version_regexp} \s+ ( .*$ ) }smx;
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr{ ^ ${formatter_regexp} \s+ ${version_regexp} \s+ ( .*$ ) }smx;
   },
 );
 
@@ -63,7 +93,10 @@ has regexp_for => (
   lazy    => 1,
   builder => sub {
     my $formatter_regexp = $_[0]->formatter_regexp;
-    qr{ ^ ${formatter_regexp} \s+ ( .* $ ) $ }smx;
+
+    # _Pulp__5010_qr_m_propagate_properly
+    ## no critic (Compatibility::PerlMinimumVersionAndWhy)
+    return qr{ ^ ${formatter_regexp} \s+ ( .* $ ) $ }smx;
   },
 );
 
@@ -71,9 +104,14 @@ has end_segment_callback => (
   is      => ro =>,
   lazy    => 1,
   builder => sub {
-    sub { }
+    return sub { };
   },
 );
+
+
+
+
+
 
 
 has segment_cache => (
@@ -84,12 +122,27 @@ has segment_cache => (
 );
 
 
+
+
+
+
+
 has segments => (
   is      => ro  =>,
   lazy    => 1,
   writer  => 'set_segments',
   builder => sub { [] },
 );
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,6 +155,11 @@ has in_segment => (
 );
 
 
+
+
+
+
+
 sub begin_segment {
   my ( $self, $format, $version, $start_line ) = @_;
   $self->set_segment_cache(
@@ -109,11 +167,16 @@ sub begin_segment {
       format     => $format,
       start_line => $start_line,
       ( defined $version ? ( version => $version ) : () ),
-    }
+    },
   );
   $self->set_in_segment(1);
   return $self;
 }
+
+
+
+
+
 
 
 sub end_segment {
@@ -128,20 +191,30 @@ sub end_segment {
 }
 
 
+
+
+
+
+
 sub append_segment_data {
-  my ( $self, $data ) = @_;
+  my ( $self, $segment_data ) = @_;
   $self->segment_cache->{data} ||= q{};
-  $self->segment_cache->{data} .= $data;
+  $self->segment_cache->{data} .= $segment_data;
   return $self;
 }
 
 
+
+
+
+
+
 sub add_segment {
-  my ( $self, $format, $version, $data, $start_line ) = @_;
+  my ( $self, $format, $version, $section_data, $start_line ) = @_;
   my $segment = {};
   $segment->{format}     = $format;
   $segment->{version}    = $version if defined $version;
-  $segment->{data}       = $data;
+  $segment->{data}       = $section_data;
   $segment->{start_line} = $start_line if defined $start_line;
 
   push @{ $self->segments }, $segment;
@@ -150,6 +223,11 @@ sub add_segment {
 
   return $self;
 }
+
+
+
+
+
 
 
 sub handle_begin {
@@ -165,6 +243,11 @@ sub handle_begin {
   }
   return $self->handle_ignored($event);
 }
+
+
+
+
+
 
 
 sub handle_end {
@@ -190,6 +273,11 @@ sub handle_end {
 }
 
 
+
+
+
+
+
 sub handle_for {
   my ( $self, $event ) = @_;
   if ( $event->{content} =~ $self->regexp_for_with_version ) {
@@ -202,10 +290,20 @@ sub handle_for {
 }
 
 
+
+
+
+
+
 sub handle_cut {
   my ( $self, $element ) = @_;
   return $self->handle_ignored($element);
 }
+
+
+
+
+
 
 
 sub handle_text {
@@ -213,6 +311,11 @@ sub handle_text {
   return $self->handle_ignored($element) unless $self->in_segment;
   return $self->append_segment_data( $element->{content} );
 }
+
+
+
+
+
 
 
 sub handle_ignored {
@@ -223,15 +326,20 @@ sub handle_ignored {
 }
 
 
+
+
+
+
+
 sub handle_event {
   my ( $self, $event ) = @_;
   for my $command (qw( begin end for cut )) {
-    last unless $event->{type} eq 'command';
+    last unless 'command' eq $event->{type};
     next unless $event->{command} eq $command;
     my $method = $self->can( 'handle_' . $command );
     return $self->$method($event);
   }
-  if ( $event->{type} eq 'text' ) {
+  if ( 'text' eq $event->{type} ) {
     return $self->handle_text($event);
   }
   return $self->handle_ignored($event);
@@ -252,7 +360,7 @@ MetaPOD::Extractor - Extract MetaPOD declarations from a file.
 
 =head1 VERSION
 
-version 0.3.5
+version 0.3.6
 
 =head1 METHODS
 
@@ -333,7 +441,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -1,20 +1,52 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Assembler;
-BEGIN {
-  $MetaPOD::Assembler::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Assembler::VERSION = '0.3.5';
-}
-
+$MetaPOD::Assembler::VERSION = '0.3.6';
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-use Moo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use Moo qw( has );
 use Carp qw( croak );
 use Module::Runtime qw( use_module );
+
+
+
 
 
 has 'result' => (
@@ -27,6 +59,9 @@ has 'result' => (
   },
   clearer => 'clear_result',
 );
+
+
+
 
 
 has extractor => (
@@ -46,6 +81,9 @@ has extractor => (
 );
 
 
+
+
+
 has format_map => (
   is       => ro =>,
   required => 1,
@@ -56,12 +94,22 @@ has format_map => (
 );
 
 
+
+
+
+
+
 sub assemble_handle {
   my ( $self, $handle ) = @_;
   $self->clear_result;
   $self->extractor->read_handle($handle);
   return $self->result;
 }
+
+
+
+
+
 
 
 sub assemble_file {
@@ -72,12 +120,22 @@ sub assemble_file {
 }
 
 
+
+
+
+
+
 sub assemble_string {
   my ( $self, $string ) = @_;
   $self->clear_result;
   $self->extractor->read_string($string);
   return $self->result;
 }
+
+
+
+
+
 
 
 sub get_class_for_format {
@@ -89,11 +147,22 @@ sub get_class_for_format {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 sub handle_segment {
   my ( $self, $segment ) = @_;
   my $format  = $segment->{format};
   my $version = $segment->{version};
-  my $data    = $segment->{data};
 
   my $class = $self->get_class_for_format($format);
   use_module($class);
@@ -119,7 +188,7 @@ MetaPOD::Assembler - Glue layer that dispatches segments to a constructed Result
 
 =head1 VERSION
 
-version 0.3.5
+version 0.3.6
 
 =head1 SYNOPSIS
 
@@ -164,7 +233,7 @@ Gets the class to load for the specified format from the internal map, L</format
     $assembler->handle_segment( $segment_hash )
 
 This is the callback point of entry that dispatches calls from the C<MetaPOD::Extractor>,
-loads and calls the relevant C<Format> ( via L</get_class_for_format>, validates
+loads and calls the relevant C<Format> ( via L</get_class_for_format> ), validates
 that version specifications are supported ( via C<< Format->supports_version($v) >> )
 and then asks the given format to modify the current C<MetaPOD::Result> object
 by parsing the given C<$segment_hash>
@@ -194,7 +263,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

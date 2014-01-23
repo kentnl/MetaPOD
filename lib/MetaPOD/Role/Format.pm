@@ -1,29 +1,70 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Role::Format;
-BEGIN {
-  $MetaPOD::Role::Format::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $MetaPOD::Role::Format::VERSION = '0.3.5';
-}
-
+$MetaPOD::Role::Format::VERSION = '0.3.6';
 # ABSTRACT: Base role for common format routines
 
-use Moo::Role;
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+use Moo::Role qw( requires );
 use Carp qw( croak );
 use version 0.77;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 sub supported_versions { return qw( v1.0.0 ) }
+
+
+
+
+
+
+
+
+
 
 
 sub _supported_versions {
   my $class = shift;
   return map { version->parse($_) } $class->supported_versions;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 sub supports_version {
@@ -55,7 +96,7 @@ MetaPOD::Role::Format - Base role for common format routines
 
 =head1 VERSION
 
-version 0.3.5
+version 0.3.6
 
 =head1 METHODS
 
@@ -107,7 +148,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

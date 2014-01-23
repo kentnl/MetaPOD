@@ -2,7 +2,7 @@ NAME
     MetaPOD - An evolution of POD
 
 VERSION
-    version 0.3.5
+    version 0.3.6
 
 What is MetaPOD
   1. Documentation About Documentation
@@ -35,7 +35,8 @@ What can MetaPOD do for me
     However, for a taste of what we might see with widespread use of
     MetaPOD, here is what we can easily determine from the present "API",
     with the existing annotations in within MetaPOD itself:
-    http://kentfredric.github.io/MetaPOD/media/self_structure.png
+    "self_structure.png"
+    <http://kentfredric.github.io/MetaPOD/media/self_structure.png>
 
 People who are writing MetaPOD
     Eventually, the goal is to have the MetaPOD itself able to be generated
@@ -60,7 +61,7 @@ AUTHOR
     Kent Fredric <kentfredric@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Kent Fredric
+    This software is copyright (c) 2014 by Kent Fredric
     <kentfredric@gmail.com>.
 
     This is free software; you can redistribute it and/or modify it under
