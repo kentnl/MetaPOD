@@ -9,7 +9,7 @@ package MetaPOD::Role::Format;
 
 # AUTHORITY
 
-use Moo::Role;
+use Moo::Role qw( requires );
 use Carp qw( croak );
 use version 0.77;
 
