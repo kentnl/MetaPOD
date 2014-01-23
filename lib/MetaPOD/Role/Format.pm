@@ -1,6 +1,7 @@
-
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Role::Format;
 $MetaPOD::Role::Format::VERSION = '0.3.6';
@@ -8,7 +9,7 @@ $MetaPOD::Role::Format::VERSION = '0.3.6';
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-use Moo::Role;
+use Moo::Role qw( requires );
 use Carp qw( croak );
 use version 0.77;
 
