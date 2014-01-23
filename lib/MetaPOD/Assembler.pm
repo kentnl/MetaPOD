@@ -163,7 +163,6 @@ sub handle_segment {
   my ( $self, $segment ) = @_;
   my $format  = $segment->{format};
   my $version = $segment->{version};
-  my $data    = $segment->{data};
 
   my $class = $self->get_class_for_format($format);
   use_module($class);
