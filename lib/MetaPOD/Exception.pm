@@ -5,7 +5,7 @@ use utf8;
 
 package MetaPOD::Exception;
 
-use Moo;
+use Moo qw( extends );
 
 # ABSTRACT: Base class for C<MetaPOD> exceptions.
 
