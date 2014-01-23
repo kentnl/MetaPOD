@@ -1,5 +1,7 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD::Assembler;
 $MetaPOD::Assembler::VERSION = '0.3.6';
@@ -39,7 +41,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Moo;
+use Moo qw( has );
 use Carp qw( croak );
 use Module::Runtime qw( use_module );
 
@@ -161,7 +163,6 @@ sub handle_segment {
   my ( $self, $segment ) = @_;
   my $format  = $segment->{format};
   my $version = $segment->{version};
-  my $data    = $segment->{data};
 
   my $class = $self->get_class_for_format($format);
   use_module($class);
@@ -232,7 +233,7 @@ Gets the class to load for the specified format from the internal map, L</format
     $assembler->handle_segment( $segment_hash )
 
 This is the callback point of entry that dispatches calls from the C<MetaPOD::Extractor>,
-loads and calls the relevant C<Format> ( via L</get_class_for_format>, validates
+loads and calls the relevant C<Format> ( via L</get_class_for_format> ), validates
 that version specifications are supported ( via C<< Format->supports_version($v) >> )
 and then asks the given format to modify the current C<MetaPOD::Result> object
 by parsing the given C<$segment_hash>
