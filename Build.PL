@@ -32,8 +32,9 @@ my %module_build_args = (
     "Moo::Role" => 0,
     "Pod::Eventual" => 0,
     "Throwable::Error" => 0,
-    "perl" => "5.006",
+    "perl" => "5.008",
     "strict" => 0,
+    "utf8" => 0,
     "version" => "0.77",
     "warnings" => 0
   },

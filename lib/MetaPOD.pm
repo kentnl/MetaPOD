@@ -1,11 +1,20 @@
+use 5.008; # utf8
 use strict;
 use warnings;
+use utf8;
 
 package MetaPOD;
 $MetaPOD::VERSION = '0.3.6';
 # ABSTRACT: An evolution of POD
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
+
+
+
+
+
+
 
 
 
@@ -106,11 +115,15 @@ version 0.3.6
 
 =head2 1. Documentation About Documentation
 
-MetaPOD is a system intended to express the relationships between different documents, and express the importance and context of other things within the documents, and express how the documents as a whole fit together
+MetaPOD is a system intended to express the relationships between different documents, and express the importance and context of
+other things within the documents, and express how the documents as a whole fit together
 
 =head2 2. Documentation about Meta
 
-MetaPOD also is a system by which one can express relationships about code, code which has documentation, but how the documentation is related to other documentation requires you to normally understand the meta-level information within the code works, so, this system aims to make the "meta level" more visible from the surface, so the meta-level information can be more easily used to
+MetaPOD also is a system by which one can express relationships about code, code which has documentation, but how the
+documentation is related to other documentation requires you to normally understand the meta-level information within the code
+works, so, this system aims to make the "meta level" more visible from the surface, so the meta-level information can be more
+easily used to
 
 =over 4
 
@@ -126,7 +139,8 @@ At present, there is not much built on top of the MetaPOD C<API>, so it is margi
 
 And at present, there is not much on C<CPAN> with MetaPOD annotations, so any such functionality is presently limited by that.
 
-However, for a taste of what we might see with widespread use of MetaPOD, here is what we can easily determine from the present C<API>, with the existing annotations in within MetaPOD itself: http://kentfredric.github.io/MetaPOD/media/self_structure.png
+However, for a taste of what we might see with widespread use of MetaPOD, here is what we can easily determine from the present
+C<API>, with the existing annotations in within MetaPOD itself: http://kentfredric.github.io/MetaPOD/media/self_structure.png
 
 =for html <center><img src="http://kentfredric.github.io/MetaPOD/media/self_structure.png" /></center>
 
@@ -134,7 +148,8 @@ However, for a taste of what we might see with widespread use of MetaPOD, here i
 
 =head1 People who are writing MetaPOD
 
-Eventually, the goal is to have the MetaPOD itself able to be generated via tools during development, so that the meta-layer information is cemented into the POD itself, before, or during release.
+Eventually, the goal is to have the MetaPOD itself able to be generated via tools during development, so that the meta-layer
+information is cemented into the POD itself, before, or during release.
 
 In that vein, I hope to make a C<Dist::Zilla> plug-in that does this for you.
 
@@ -152,7 +167,8 @@ In the mean time, the documents you want to be reading are
 
 =over 4
 
-=item * L<< C<MetaPOD::Assembler>|MetaPOD::Assembler >> - The tool that translates documents containing C<MetaPOD> into L<< C<MetaPOD::Result> Objects|MetaPOD::Result >>
+=item * L<< C<MetaPOD::Assembler>|MetaPOD::Assembler >> - The tool that translates documents containing C<MetaPOD> into
+L<< C<MetaPOD::Result> Objects|MetaPOD::Result >>
 
 =back
 
