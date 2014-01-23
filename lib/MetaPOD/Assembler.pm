@@ -41,7 +41,7 @@ but you can extend it to support any other defined specifications by replacing t
 
 =cut
 
-use Moo;
+use Moo qw( has );
 use Carp qw( croak );
 use Module::Runtime qw( use_module );
 
