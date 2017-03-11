@@ -5,6 +5,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - perl 5.008
 
  [Added / develop requires]
+ - Dist::Zilla::Plugin::Git::Contributors 0.006
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
  - English
  - Test::EOL
