@@ -2,6 +2,7 @@ This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and 
 
 0.3.7
  [Added / develop requires]
+ - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
  - English
  - Test::EOL
  - Test::MinimumVersion
