@@ -2,10 +2,13 @@ This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and 
 
 0.3.7
  [Added / develop requires]
+ - Dist::Zilla 5
  - Dist::Zilla::Plugin::Author::KENTNL::RecommendFixes 0.001001
  - Dist::Zilla::Plugin::Git::Contributors 0.006
+ - Dist::Zilla::Plugin::Prereqs::AuthorDeps
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
  - English
+ - Software::License::Perl_5
  - Test::EOL
  - Test::MinimumVersion
  - Test::More 1.302073
@@ -15,6 +18,7 @@ This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and 
  - Dist::Zilla::PluginBundle::Author::KENTNL 2.025021
 
  [Changed / develop requires]
+ - Dist::Zilla::Plugin::Git::NextRelease 0 → 0.004000
  - Test::Kwalitee 1.12 → 1.21
 
  [Removed / develop requires]
