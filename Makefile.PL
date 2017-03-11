@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.008;
+use 5.006;
 
 use ExtUtils::MakeMaker;
 
@@ -14,7 +14,7 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "MetaPOD",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.008",
+  "MIN_PERL_VERSION" => "5.006",
   "NAME" => "MetaPOD",
   "PREREQ_PM" => {
     "Carp" => 0,
@@ -26,7 +26,6 @@ my %WriteMakefileArgs = (
     "Pod::Eventual" => 0,
     "Throwable::Error" => 0,
     "strict" => 0,
-    "utf8" => 0,
     "version" => "0.77",
     "warnings" => 0
   },
@@ -65,7 +64,6 @@ my %FallbackPrereqs = (
   "Test::Requires" => 0,
   "Throwable::Error" => 0,
   "strict" => 0,
-  "utf8" => 0,
   "version" => "0.77",
   "warnings" => 0
 );

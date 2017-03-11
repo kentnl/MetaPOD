@@ -80,7 +80,6 @@
       "Test::Requires" : "0.10",
       "Throwable::Error" : "0.200013",
       "strict" : "1.11",
-      "utf8" : "1.19",
       "version" : "0.9917",
       "warnings" : "1.37"
    },
