@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package MetaPOD;
-$MetaPOD::VERSION = '0.3.6';
+$MetaPOD::VERSION = '0.3.7';
 # ABSTRACT: An evolution of POD
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -103,7 +103,7 @@ MetaPOD - An evolution of POD
 
 =head1 VERSION
 
-version 0.3.6
+version 0.3.7
 
 =begin MetaPOD::JSON v1.1.0
 
@@ -180,7 +180,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

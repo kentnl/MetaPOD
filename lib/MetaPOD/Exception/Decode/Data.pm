@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package MetaPOD::Exception::Decode::Data;
-$MetaPOD::Exception::Decode::Data::VERSION = '0.3.6';
+$MetaPOD::Exception::Decode::Data::VERSION = '0.3.7';
 # ABSTRACT: Failures with decoding source data
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -63,7 +63,7 @@ MetaPOD::Exception::Decode::Data - Failures with decoding source data
 
 =head1 VERSION
 
-version 0.3.6
+version 0.3.7
 
 =head1 ATTRIBUTES
 
@@ -92,7 +92,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

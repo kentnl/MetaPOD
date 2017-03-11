@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 package MetaPOD::Extractor;
-$MetaPOD::Extractor::VERSION = '0.3.6';
+$MetaPOD::Extractor::VERSION = '0.3.7';
 # ABSTRACT: Extract MetaPOD declarations from a file.
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -360,7 +360,7 @@ MetaPOD::Extractor - Extract MetaPOD declarations from a file.
 
 =head1 VERSION
 
-version 0.3.6
+version 0.3.7
 
 =head1 METHODS
 
@@ -441,7 +441,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
