@@ -1,10 +1,9 @@
-severity = 1
-only = 1
-profile-strictness = quiet
 color = 1
-verbose = 9
-color-severity-medium = yellow
 color-severity-low = green
+color-severity-medium = yellow
+only = 1
+severity = 1
+verbose = 9
 
 [Bangs::ProhibitBitwiseOperators]
 
@@ -35,7 +34,6 @@ color-severity-low = green
 [BuiltinFunctions::ProhibitSleepViaSelect]
 
 [BuiltinFunctions::ProhibitStringyEval]
-
 allow_includes = 1
 
 [BuiltinFunctions::ProhibitStringySplit]
@@ -43,6 +41,8 @@ allow_includes = 1
 [BuiltinFunctions::ProhibitUniversalCan]
 
 [BuiltinFunctions::ProhibitUniversalIsa]
+
+[BuiltinFunctions::ProhibitUselessTopic]
 
 [BuiltinFunctions::ProhibitVoidGrep]
 
@@ -88,7 +88,7 @@ allow_includes = 1
 
 [CodeLayout::RequireTrailingCommas]
 
-[CodeLayout::RequireUseUTF8]
+[-CodeLayout::RequireUseUTF8]
 
 [Compatibility::ConstantLeadingUnderscore]
 
@@ -125,8 +125,8 @@ allow_includes = 1
 [ControlStructures::ProhibitUntilBlocks]
 
 [Documentation::PodSpelling]
-
-stop_words = MetaPOD deduplicated behaviour unrecognised
+spell_command = aspell list --lang en_US
+stop_words = MetaPOD deduplicated behaviour unrecognised JSON namespace behaviours directionally
 
 [Documentation::ProhibitAdjacentLinks]
 
@@ -148,6 +148,8 @@ stop_words = MetaPOD deduplicated behaviour unrecognised
 
 [Documentation::RequireEndBeforeLastPod]
 
+[Documentation::RequireFilenameMarkup]
+
 [Documentation::RequireFinalCut]
 
 [Documentation::RequireLinkedURLs]
@@ -158,7 +160,7 @@ stop_words = MetaPOD deduplicated behaviour unrecognised
 
 [Documentation::RequirePodAtEnd]
 
-[Documentation::RequirePodLinksIncludeText]
+[-Documentation::RequirePodLinksIncludeText]
 
 [-Documentation::RequirePodSections]
 
@@ -209,7 +211,6 @@ stop_words = MetaPOD deduplicated behaviour unrecognised
 [Lax::RequireEndWithTrueConst]
 
 [Lax::RequireExplicitPackage::ExceptForPragmata]
-
 allowed_pragmata = diagnostics feature perlversion strict warnings utf8
 
 [Miscellanea::ProhibitFormats]
@@ -252,8 +253,6 @@ allowed_pragmata = diagnostics feature perlversion strict warnings utf8
 
 [-Modules::RequireExplicitPackage]
 
-allow_import_of = strict warnings 5.008 utf8
-
 [Modules::RequireFilenameMatchesPackage]
 
 [Modules::RequireNoMatchVarsWithUseEnglish]
@@ -262,7 +261,7 @@ allow_import_of = strict warnings 5.008 utf8
 
 [Modules::RequireVersionVar]
 
-[Moose::ProhibitMultipleWiths]
+[-Moose::ProhibitMultipleWiths]
 
 [Moose::ProhibitNewMethod]
 
@@ -298,13 +297,15 @@ allow_import_of = strict warnings 5.008 utf8
 
 [RegularExpressions::ProhibitUnusualDelimiters]
 
+[RegularExpressions::ProhibitUselessTopic]
+
 [RegularExpressions::RequireBracesForMultiline]
 
 [RegularExpressions::RequireDotMatchAnything]
 
 [RegularExpressions::RequireExtendedFormatting]
 
-[RegularExpressions::RequireLineBoundaryMatching]
+[-RegularExpressions::RequireLineBoundaryMatching]
 
 [Subroutines::ProhibitAmpersandSigils]
 
@@ -317,7 +318,7 @@ exempt_subs = String::Formatter::str_rf
 
 [Subroutines::ProhibitExcessComplexity]
 
-[Subroutines::ProhibitExplicitReturnUndef]
+[-Subroutines::ProhibitExplicitReturnUndef]
 
 [Subroutines::ProhibitExportingUndeclaredSubs]
 
@@ -332,14 +333,13 @@ exempt_subs = String::Formatter::str_rf
 [Subroutines::ProhibitSubroutinePrototypes]
 
 [Subroutines::ProhibitUnusedPrivateSubroutines]
-
 private_name_regex = _(?!build_)\w
 
 [Subroutines::ProtectPrivateSubs]
 
-[Subroutines::RequireArgUnpacking]
+[-Subroutines::RequireArgUnpacking]
 
-[Subroutines::RequireFinalReturn]
+[-Subroutines::RequireFinalReturn]
 
 [TestingAndDebugging::ProhibitNoStrict]
 
@@ -350,15 +350,12 @@ private_name_regex = _(?!build_)\w
 [TestingAndDebugging::RequireTestLabels]
 
 [TestingAndDebugging::RequireUseStrict]
-
-equivalent_modules = Moose
+equivalent_modules = Moose Moo
 
 [TestingAndDebugging::RequireUseWarnings]
-
-equivalent_modules = Moose
+equivalent_modules = Moose Moo
 
 [Tics::ProhibitLongLines]
-
 base_max = 130
 
 [Tics::ProhibitManyArrows]
@@ -377,7 +374,7 @@ base_max = 130
 
 [ValuesAndExpressions::ProhibitComplexVersion]
 
-[ValuesAndExpressions::ProhibitConstantPragma]
+[-ValuesAndExpressions::ProhibitConstantPragma]
 
 [ValuesAndExpressions::ProhibitDuplicateHashKeys]
 
@@ -437,6 +434,8 @@ base_max = 130
 
 [Variables::ProhibitConditionalDeclarations]
 
+[Variables::ProhibitEvilVariables]
+
 [Variables::ProhibitLocalVars]
 
 [Variables::ProhibitMatchVars]
@@ -462,4 +461,3 @@ base_max = 130
 [Variables::RequireLocalizedPunctuationVars]
 
 [Variables::RequireNegativeIndices]
-
