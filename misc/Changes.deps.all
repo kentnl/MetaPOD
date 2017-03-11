@@ -7,9 +7,11 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  [Added / develop requires]
  - Dist::Zilla 5
  - Dist::Zilla::Plugin::Author::KENTNL::RecommendFixes 0.001001
+ - Dist::Zilla::Plugin::Author::KENTNL::TravisCI
  - Dist::Zilla::Plugin::Git::Contributors 0.006
  - Dist::Zilla::Plugin::Prereqs::AuthorDeps
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
+ - Dist::Zilla::Plugin::Prereqs::Upgrade
  - Dist::Zilla::Plugin::Readme::Brief
  - Dist::Zilla::Plugin::Test::EOL
  - English
@@ -21,6 +23,12 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  [Added / develop suggests]
  - Dist::Zilla::App::Command::bakeini 0.002006
  - Dist::Zilla::PluginBundle::Author::KENTNL 2.025021
+
+ [Added / runtime recommends]
+ - Moo 1.000008
+
+ [Added / test recommends]
+ - Path::Tiny 0.058
 
  [Added / test requires]
  - File::Spec
