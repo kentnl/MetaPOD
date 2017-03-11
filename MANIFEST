@@ -11,6 +11,7 @@ LICENSE
 MANIFEST
 META.json
 META.yml
+README
 corpus/basic/01_format_basic.pm
 corpus/basic/02_format_basic_version.pm
 corpus/basic/03_format_basic_for.pm
@@ -52,6 +53,7 @@ misc/Changes.deps
 misc/Changes.deps.all
 misc/Changes.deps.dev
 misc/Changes.deps.opt
+misc/built_with.json
 perlcritic.rc
 t/00-compile/lib_MetaPOD_Assembler_pm.t
 t/00-compile/lib_MetaPOD_Exception_Decode_Data_pm.t
@@ -69,10 +71,10 @@ t/04-assembler/01-basic.t
 t/self-extract.t
 weaver.ini
 xt/author/critic.t
+xt/author/eol.t
 xt/author/pod-coverage.t
 xt/author/pod-syntax.t
 xt/release/cpan-changes.t
 xt/release/distmeta.t
-xt/release/eol.t
 xt/release/kwalitee.t
 xt/release/minimum-version.t
