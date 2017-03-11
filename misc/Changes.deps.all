@@ -5,10 +5,13 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - perl 5.008
 
  [Added / develop requires]
+ - Dist::Zilla 5
  - Dist::Zilla::Plugin::Author::KENTNL::RecommendFixes 0.001001
  - Dist::Zilla::Plugin::Git::Contributors 0.006
+ - Dist::Zilla::Plugin::Prereqs::AuthorDeps
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
  - English
+ - Software::License::Perl_5
  - Test::EOL
  - Test::MinimumVersion
  - Test::More 1.302073
@@ -28,6 +31,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - Module::Build 0.4204 → 0.4220
 
  [Changed / develop requires]
+ - Dist::Zilla::Plugin::Git::NextRelease 0 → 0.004000
  - Test::Kwalitee 1.12 → 1.21
 
  [Changed / test recommends]
