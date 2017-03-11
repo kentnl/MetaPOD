@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More;
+use Test::More tests => 4;
 
 use FindBin;
 use Path::Tiny qw(path);
@@ -41,5 +41,3 @@ for my $child ( $corpus->children ) {
   my $result = $extractor->segments;
   is_deeply( $result, [$expected_data], $child->basename );
 }
-done_testing;
-
