@@ -1,8 +1,8 @@
 use strict;
 use warnings;
+use Test::Needs qw(MetaPOD::Format::JSON);
 use Test::More tests => 7 * 3;
 use Test::Fatal;
-use Test::Requires qw(MetaPOD::Format::JSON);
 use FindBin;
 use Path::Tiny qw(path);
 use Path::Iterator::Rule;

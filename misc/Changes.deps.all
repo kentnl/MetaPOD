@@ -47,6 +47,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
 
  [Added / test requires]
  - File::Spec
+ - Test::Needs
  - perl 5.006
 
  [Changed / develop requires]
@@ -92,6 +93,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  [Removed / test requires]
  - File::Spec::Functions
  - List::Util
+ - Test::Requires
 
 0.3.6 2014-01-23T11:35:46Z
  [Added / develop requires]

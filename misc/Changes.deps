@@ -7,6 +7,7 @@ This file contains changes in REQUIRED dependencies for standard CPAN phases (co
 
  [Added / test requires]
  - File::Spec
+ - Test::Needs
  - perl 5.006
 
  [Changed / runtime requires]
@@ -27,6 +28,7 @@ This file contains changes in REQUIRED dependencies for standard CPAN phases (co
  [Removed / test requires]
  - File::Spec::Functions
  - List::Util
+ - Test::Requires
 
 0.3.6 2014-01-23T11:35:46Z
  [Added / runtime requires]
