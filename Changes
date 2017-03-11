@@ -1,6 +1,6 @@
 Release history for MetaPOD
 
-0.3.7 2017-03-11T14:26:44Z
+0.3.7 2017-03-11T14:26:54Z
  - Bugfix: update tooling avoids -Ddefault_inc_excludes_dot issues
 
  [Dependencies::Stats]
