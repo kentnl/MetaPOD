@@ -48,17 +48,17 @@ And at present, there is not much on C<CPAN> with MetaPOD annotations, so any su
 
 However, for a taste of what we might see with widespread use of MetaPOD, here is what we can easily determine from the present
 C<API>, with the existing annotations in within MetaPOD itself:
-L<< C<self_structure.png>|http://kentfredric.github.io/MetaPOD/media/self_structure.png >>
+L<< C<self_structure.png>|http://kentnl.github.io/MetaPOD/media/self_structure.png >>
 
 =begin html
 
-<center><img src="http://kentfredric.github.io/MetaPOD/media/self_structure.png" /></center>
+<center><img src="http://kentnl.github.io/MetaPOD/media/self_structure.png" /></center>
 
 =end html
 
 =begin markdown
 
-![Graphviz Graph of MetaPOD](http://kentfredric.github.io/MetaPOD/media/self_structure.png)
+![Graphviz Graph of MetaPOD](http://kentnl.github.io/MetaPOD/media/self_structure.png)
 
 =end markdown
 
