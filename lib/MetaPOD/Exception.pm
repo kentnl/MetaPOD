@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Exception;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 use Moo qw( extends );
 

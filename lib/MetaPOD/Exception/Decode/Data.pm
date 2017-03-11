@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Exception::Decode::Data;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 # ABSTRACT: Failures with decoding source data
 

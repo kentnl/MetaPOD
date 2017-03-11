@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Extractor;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 # ABSTRACT: Extract MetaPOD declarations from a file.
 
