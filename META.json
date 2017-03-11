@@ -628,7 +628,7 @@
             "class" : "Dist::Zilla::Plugin::ModuleBuild",
             "config" : {
                "Dist::Zilla::Role::TestRunner" : {
-                  "default_jobs" : 1
+                  "default_jobs" : "10"
                }
             },
             "name" : "@Author::KENTNL/ModuleBuild",
@@ -663,7 +663,7 @@
             "class" : "Dist::Zilla::Plugin::RunExtraTests",
             "config" : {
                "Dist::Zilla::Role::TestRunner" : {
-                  "default_jobs" : 1
+                  "default_jobs" : "10"
                }
             },
             "name" : "@Author::KENTNL/RunExtraTests",

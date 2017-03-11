@@ -5,10 +5,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - perl 5.008
 
  [Added / develop requires]
-<<<<<<< HEAD
-=======
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
->>>>>>> 8ce5177... Bake @ 2.011001
  - English
  - Test::EOL
  - Test::MinimumVersion

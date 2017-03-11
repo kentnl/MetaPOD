@@ -2,10 +2,7 @@ This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and 
 
 0.3.7
  [Added / develop requires]
-<<<<<<< HEAD
-=======
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
->>>>>>> 8ce5177... Bake @ 2.011001
  - English
  - Test::EOL
  - Test::MinimumVersion
