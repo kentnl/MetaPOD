@@ -1,8 +1,15 @@
 This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL dependencies for all phases (configure/build/runtime/test/develop)
 
 0.3.7
+ [Added / configure recommends]
+ - ExtUtils::MakeMaker 7.00
+
  [Added / configure requires]
+ - ExtUtils::MakeMaker
  - perl 5.008
+
+ [Added / develop recommends]
+ - Test::More 0.99
 
  [Added / develop requires]
  - Dist::Zilla 5
@@ -11,6 +18,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - Dist::Zilla::Plugin::BumpVersionAfterRelease
  - Dist::Zilla::Plugin::CopyFilesFromBuild
  - Dist::Zilla::Plugin::Git::Contributors 0.006
+ - Dist::Zilla::Plugin::MakeMaker
  - Dist::Zilla::Plugin::MetaYAML::Minimal
  - Dist::Zilla::Plugin::Prereqs::AuthorDeps
  - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
@@ -23,7 +31,7 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - Software::License::Perl_5
  - Test::EOL
  - Test::MinimumVersion
- - Test::More 1.302073
+ - Test::More 0.96
 
  [Added / develop suggests]
  - Dist::Zilla::App::Command::bakeini 0.002006
@@ -33,17 +41,13 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - Moo 1.000008
 
  [Added / test recommends]
+ - ExtUtils::MakeMaker 7.00
  - Path::Tiny 0.058
+ - Test::More 0.99
 
  [Added / test requires]
  - File::Spec
  - perl 5.008
-
- [Changed / build requires]
- - Module::Build 0.4204 → 0.4220
-
- [Changed / configure requires]
- - Module::Build 0.4204 → 0.4220
 
  [Changed / develop requires]
  - Dist::Zilla::Plugin::Git::NextRelease 0 → 0.004000
@@ -55,13 +59,21 @@ This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL depen
  - CPAN::Meta 0 → 2.120900
 
  [Changed / test requires]
- - Test::More 1.001002 → 1.302073
+ - Test::More 1.001002 → 0
+
+ [Removed / build requires]
+ - Module::Build 0.4204
+
+ [Removed / configure requires]
+ - Module::Build 0.4204
 
  [Removed / develop requires]
  - Dist::Zilla::Plugin::EOLTests
  - Dist::Zilla::Plugin::Git::NextVersion::Sanitized
  - Dist::Zilla::Plugin::MetaYAML
+ - Dist::Zilla::Plugin::ModuleBuild
  - Dist::Zilla::Plugin::PkgVersion
+ - Dist::Zilla::Plugin::Prereqs::MatchInstalled
  - Dist::Zilla::Plugin::ReadmeFromPod
  - Dist::Zilla::PluginBundle::Author::KENTNL 2.010001
 

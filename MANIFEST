@@ -3,12 +3,12 @@
 .mailmap
 .perltidyrc
 .travis.yml
-Build.PL
 Changes
 LICENSE
 MANIFEST
 META.json
 META.yml
+Makefile.PL
 README
 corpus/basic/01_format_basic.pm
 corpus/basic/02_format_basic_version.pm
