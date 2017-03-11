@@ -1,8 +1,8 @@
 use strict;
 use warnings;
-use Test::More;
+use Test::Needs qw(MetaPOD::Format::JSON);
+use Test::More tests => 7 * 3;
 use Test::Fatal;
-use Test::Requires qw(MetaPOD::Format::JSON);
 use FindBin;
 use Path::Tiny qw(path);
 use Path::Iterator::Rule;
@@ -16,22 +16,19 @@ my $it   = $rule->iter("$root");
 my $assembler = MetaPOD::Assembler->new();
 
 while ( my $file = $it->() ) {
-  my $rpath = path($file)->relative($root);
-  $rpath =~ s/.pm//;
-  $rpath =~ s{/}{::}g;
+  my $rpath  = path($file)->relative($root);
+  my $module = $rpath;
+  $module =~ s/.pm//;
+  $module =~ s{/}{::}g;
   my $result;
 
-  subtest "$rpath" => sub {
-    is(
-      exception {
-        $result = $assembler->assemble_file($file);
-      },
-      undef,
-      'Can assemble ' . path($file)->relative($root)
-    );
-    isa_ok( $result, 'MetaPOD::Result' );
-    is( $result->namespace, $rpath, "MetaPOD.namespace == $rpath" );
-  };
+  is(
+    exception {
+      $result = $assembler->assemble_file($file);
+    },
+    undef,
+    'Can assemble ' . $rpath
+  );
+  isa_ok( $result, 'MetaPOD::Result', "$rpath yeilds a MetaPOD::Result" );
+  is( $result->namespace, $module, "MetaPOD.namespace == $module from $rpath" );
 }
-
-done_testing;

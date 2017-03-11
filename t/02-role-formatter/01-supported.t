@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More;
+use Test::More tests => 12;
 use Test::Fatal;
 
 sub died {
@@ -60,4 +60,3 @@ died exception { t::sample::v2->supports_version('v1') },     'v2 !supports v1';
 lived exception { t::sample::v2->supports_version('v1.0.1') }, 'v2 supports v1.0.1';
 lived exception { t::sample::v2->supports_version('v1.1.0') }, 'v2 supports v1.1.0';
 lived exception { t::sample::v2->supports_version('v1.1') },   'v2 supports v1.1';
-done_testing;

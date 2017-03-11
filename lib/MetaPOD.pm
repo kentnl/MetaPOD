@@ -1,10 +1,11 @@
-use 5.008;    # utf8
+use 5.006;    # our
 use strict;
 use warnings;
-use utf8;
 
 package MetaPOD;
-$MetaPOD::VERSION = '0.3.6';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: An evolution of POD
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -103,7 +104,7 @@ MetaPOD - An evolution of POD
 
 =head1 VERSION
 
-version 0.3.6
+version v0.4.0
 
 =begin MetaPOD::JSON v1.1.0
 
@@ -142,11 +143,11 @@ And at present, there is not much on C<CPAN> with MetaPOD annotations, so any su
 
 However, for a taste of what we might see with widespread use of MetaPOD, here is what we can easily determine from the present
 C<API>, with the existing annotations in within MetaPOD itself:
-L<< C<self_structure.png>|http://kentfredric.github.io/MetaPOD/media/self_structure.png >>
+L<< C<self_structure.png>|http://kentnl.github.io/MetaPOD/media/self_structure.png >>
 
-=for html <center><img src="http://kentfredric.github.io/MetaPOD/media/self_structure.png" /></center>
+=for html <center><img src="http://kentnl.github.io/MetaPOD/media/self_structure.png" /></center>
 
-=for markdown ![Graphviz Graph of MetaPOD](http://kentfredric.github.io/MetaPOD/media/self_structure.png)
+=for markdown ![Graphviz Graph of MetaPOD](http://kentnl.github.io/MetaPOD/media/self_structure.png)
 
 =head1 People who are writing MetaPOD
 
@@ -176,11 +177,11 @@ L<< C<MetaPOD::Result> Objects|MetaPOD::Result >>
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

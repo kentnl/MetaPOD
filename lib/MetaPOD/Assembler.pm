@@ -1,10 +1,11 @@
-use 5.008;    # utf8
+use 5.006;    # our
 use strict;
 use warnings;
-use utf8;
 
 package MetaPOD::Assembler;
-$MetaPOD::Assembler::VERSION = '0.3.6';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -188,7 +189,7 @@ MetaPOD::Assembler - Glue layer that dispatches segments to a constructed Result
 
 =head1 VERSION
 
-version 0.3.6
+version v0.4.0
 
 =head1 SYNOPSIS
 
@@ -259,11 +260,11 @@ by parsing the given C<$segment_hash>
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
