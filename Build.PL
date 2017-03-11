@@ -16,7 +16,7 @@ my %module_build_args = (
   },
   "dist_abstract" => "An evolution of POD",
   "dist_author" => [
-    "Kent Fredric <kentfredric\@gmail.com>"
+    "Kent Fredric <kentnl\@cpan.org>"
   ],
   "dist_name" => "MetaPOD",
   "dist_version" => "0.3.7",
