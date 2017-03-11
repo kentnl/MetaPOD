@@ -1,6 +1,45 @@
 This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL dependencies for all phases (configure/build/runtime/test/develop)
 
 0.3.7
+ [Added / configure requires]
+ - perl 5.008
+
+ [Added / develop requires]
+<<<<<<< HEAD
+=======
+ - Dist::Zilla::Plugin::Prereqs::Recommend::MatchInstalled
+>>>>>>> 8ce5177... Bake @ 2.011001
+ - English
+ - Test::EOL
+ - Test::MinimumVersion
+ - Test::More 1.302073
+
+ [Added / test requires]
+ - File::Spec
+ - perl 5.008
+
+ [Changed / build requires]
+ - Module::Build 0.4204 → 0.4220
+
+ [Changed / configure requires]
+ - Module::Build 0.4204 → 0.4220
+
+ [Changed / develop requires]
+ - Dist::Zilla::PluginBundle::Author::KENTNL 2.010001 → 2.025021
+ - Test::Kwalitee 1.12 → 1.21
+
+ [Changed / test recommends]
+ - CPAN::Meta 0 → 2.120900
+
+ [Changed / test requires]
+ - Test::More 1.001002 → 1.302073
+
+ [Removed / test recommends]
+ - CPAN::Meta::Requirements
+
+ [Removed / test requires]
+ - File::Spec::Functions
+ - List::Util
 
 0.3.6 2014-01-23T11:35:46Z
  [Added / develop requires]
