@@ -22,6 +22,9 @@ my %module_build_args = (
   "dist_version" => "0.3.7",
   "license" => "perl",
   "module_name" => "MetaPOD",
+  "recommends" => {
+    "Moo" => "1.000008"
+  },
   "recursive_test_files" => 1,
   "requires" => {
     "Carp" => 0,
