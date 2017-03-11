@@ -37,7 +37,7 @@ my %WriteMakefileArgs = (
     "Path::Tiny" => 0,
     "Test::Fatal" => 0,
     "Test::More" => 0,
-    "Test::Requires" => 0
+    "Test::Needs" => 0
   },
   "VERSION" => "v0.4.0",
   "test" => {
@@ -61,7 +61,7 @@ my %FallbackPrereqs = (
   "Pod::Eventual" => 0,
   "Test::Fatal" => 0,
   "Test::More" => 0,
-  "Test::Requires" => 0,
+  "Test::Needs" => 0,
   "Throwable::Error" => 0,
   "strict" => 0,
   "version" => "0.77",

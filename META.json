@@ -129,7 +129,7 @@
             "Path::Tiny" : "0",
             "Test::Fatal" : "0",
             "Test::More" : "0",
-            "Test::Requires" : "0",
+            "Test::Needs" : "0",
             "perl" : "5.006"
          }
       }
