@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD::Role::Format;
 
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Base role for common format routines
 
 # AUTHORITY

@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD::Result;
 
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Compiled aggregate result object for MetaPOD
 
 # AUTHORITY

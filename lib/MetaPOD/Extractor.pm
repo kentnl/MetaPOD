@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD::Extractor;
 
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Extract MetaPOD declarations from a file.
 
 # AUTHORITY

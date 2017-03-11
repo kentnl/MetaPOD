@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD;
 
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: An evolution of POD
 
 # AUTHORITY

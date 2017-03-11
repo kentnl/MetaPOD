@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD::Exception::Decode::Data;
 
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Failures with decoding source data
 
 # AUTHORITY

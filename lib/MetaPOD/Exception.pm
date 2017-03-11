@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD::Exception;
 
+our $VERSION = 'v0.4.0';
+
 use Moo qw( extends );
 
 # ABSTRACT: Base class for MetaPOD exceptions.

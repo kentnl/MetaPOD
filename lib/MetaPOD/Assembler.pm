@@ -5,6 +5,8 @@ use utf8;
 
 package MetaPOD::Assembler;
 
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
 # AUTHORITY
