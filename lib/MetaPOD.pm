@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD;
-$MetaPOD::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: An evolution of POD
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -103,7 +105,7 @@ MetaPOD - An evolution of POD
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =begin MetaPOD::JSON v1.1.0
 

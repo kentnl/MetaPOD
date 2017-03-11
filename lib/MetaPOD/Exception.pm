@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD::Exception;
-$MetaPOD::Exception::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 use Moo qw( extends );
 
 # ABSTRACT: Base class for MetaPOD exceptions.
@@ -41,7 +43,7 @@ MetaPOD::Exception - Base class for MetaPOD exceptions.
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =begin MetaPOD::JSON v1.1.0
 

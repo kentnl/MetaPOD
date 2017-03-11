@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD::Assembler;
-$MetaPOD::Assembler::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -188,7 +190,7 @@ MetaPOD::Assembler - Glue layer that dispatches segments to a constructed Result
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =head1 SYNOPSIS
 

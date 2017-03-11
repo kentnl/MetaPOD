@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD::Role::Format;
-$MetaPOD::Role::Format::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Base role for common format routines
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -96,7 +98,7 @@ MetaPOD::Role::Format - Base role for common format routines
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =head1 METHODS
 

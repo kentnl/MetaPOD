@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD::Exception::Decode::Data;
-$MetaPOD::Exception::Decode::Data::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Failures with decoding source data
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -63,7 +65,7 @@ MetaPOD::Exception::Decode::Data - Failures with decoding source data
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =head1 ATTRIBUTES
 

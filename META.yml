@@ -26,25 +26,25 @@ name: MetaPOD
 provides:
   MetaPOD:
     file: lib/MetaPOD.pm
-    version: v0.3.7
+    version: v0.4.0
   MetaPOD::Assembler:
     file: lib/MetaPOD/Assembler.pm
-    version: v0.3.7
+    version: v0.4.0
   MetaPOD::Exception:
     file: lib/MetaPOD/Exception.pm
-    version: v0.3.7
+    version: v0.4.0
   MetaPOD::Exception::Decode::Data:
     file: lib/MetaPOD/Exception/Decode/Data.pm
-    version: v0.3.7
+    version: v0.4.0
   MetaPOD::Extractor:
     file: lib/MetaPOD/Extractor.pm
-    version: v0.3.7
+    version: v0.4.0
   MetaPOD::Result:
     file: lib/MetaPOD/Result.pm
-    version: v0.3.7
+    version: v0.4.0
   MetaPOD::Role::Format:
     file: lib/MetaPOD/Role/Format.pm
-    version: v0.3.7
+    version: v0.4.0
 recommends:
   Moo: '1.000008'
 requires:
@@ -65,4 +65,4 @@ resources:
   bugtracker: https://github.com/kentnl/MetaPOD/issues
   homepage: https://github.com/kentnl/MetaPOD
   repository: https://github.com/kentnl/MetaPOD.git
-version: 0.3.7
+version: v0.4.0

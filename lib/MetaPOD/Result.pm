@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD::Result;
-$MetaPOD::Result::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Compiled aggregate result object for MetaPOD
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -185,7 +187,7 @@ MetaPOD::Result - Compiled aggregate result object for MetaPOD
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =head1 METHODS
 

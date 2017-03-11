@@ -4,7 +4,9 @@ use warnings;
 use utf8;
 
 package MetaPOD::Extractor;
-$MetaPOD::Extractor::VERSION = '0.3.7';
+
+our $VERSION = 'v0.4.0';
+
 # ABSTRACT: Extract MetaPOD declarations from a file.
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
@@ -360,7 +362,7 @@ MetaPOD::Extractor - Extract MetaPOD declarations from a file.
 
 =head1 VERSION
 
-version 0.3.7
+version v0.4.0
 
 =head1 METHODS
 
