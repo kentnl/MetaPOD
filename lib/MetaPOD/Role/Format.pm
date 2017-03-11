@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Role::Format;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 # ABSTRACT: Base role for common format routines
 
@@ -97,7 +97,7 @@ MetaPOD::Role::Format - Base role for common format routines
 
 =head1 VERSION
 
-version v0.4.0
+version v0.4.1
 
 =head1 METHODS
 

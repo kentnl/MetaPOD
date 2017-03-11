@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Exception;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 use Moo qw( extends );
 
@@ -42,7 +42,7 @@ MetaPOD::Exception - Base class for MetaPOD exceptions.
 
 =head1 VERSION
 
-version v0.4.0
+version v0.4.1
 
 =begin MetaPOD::JSON v1.1.0
 

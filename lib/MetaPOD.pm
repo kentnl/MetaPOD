@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 # ABSTRACT: An evolution of POD
 
@@ -104,7 +104,7 @@ MetaPOD - An evolution of POD
 
 =head1 VERSION
 
-version v0.4.0
+version v0.4.1
 
 =begin MetaPOD::JSON v1.1.0
 

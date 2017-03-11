@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Assembler;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 # ABSTRACT: Glue layer that dispatches segments to a constructed Result
 
@@ -189,7 +189,7 @@ MetaPOD::Assembler - Glue layer that dispatches segments to a constructed Result
 
 =head1 VERSION
 
-version v0.4.0
+version v0.4.1
 
 =head1 SYNOPSIS
 

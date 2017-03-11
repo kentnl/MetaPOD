@@ -137,31 +137,31 @@
    "provides" : {
       "MetaPOD" : {
          "file" : "lib/MetaPOD.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       },
       "MetaPOD::Assembler" : {
          "file" : "lib/MetaPOD/Assembler.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       },
       "MetaPOD::Exception" : {
          "file" : "lib/MetaPOD/Exception.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       },
       "MetaPOD::Exception::Decode::Data" : {
          "file" : "lib/MetaPOD/Exception/Decode/Data.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       },
       "MetaPOD::Extractor" : {
          "file" : "lib/MetaPOD/Extractor.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       },
       "MetaPOD::Result" : {
          "file" : "lib/MetaPOD/Result.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       },
       "MetaPOD::Role::Format" : {
          "file" : "lib/MetaPOD/Role/Format.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       }
    },
    "release_status" : "stable",
@@ -176,7 +176,7 @@
          "web" : "https://github.com/kentnl/MetaPOD"
       }
    },
-   "version" : "v0.4.0",
+   "version" : "v0.4.1",
    "x_BuiltWith" : {
       "external_file" : "misc/built_with.json"
    },
@@ -686,7 +686,7 @@
                   "branch" : null,
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "v0.4.0-source",
+                  "tag" : "v0.4.1-source",
                   "tag_format" : "%v-source",
                   "tag_message" : "v%v"
                },
@@ -780,7 +780,7 @@
                   "branch" : "releases",
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "v0.4.0",
+                  "tag" : "v0.4.1",
                   "tag_format" : "%v",
                   "tag_message" : "v%v"
                },

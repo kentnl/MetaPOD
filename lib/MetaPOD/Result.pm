@@ -4,7 +4,7 @@ use warnings;
 
 package MetaPOD::Result;
 
-our $VERSION = 'v0.4.0';
+our $VERSION = 'v0.4.1';
 
 # ABSTRACT: Compiled aggregate result object for MetaPOD
 
@@ -186,7 +186,7 @@ MetaPOD::Result - Compiled aggregate result object for MetaPOD
 
 =head1 VERSION
 
-version v0.4.0
+version v0.4.1
 
 =head1 METHODS
 
