@@ -1,6 +1,6 @@
 Release history for MetaPOD
 
-v0.4.0 2017-03-11T14:31:05Z 6d36cdc
+v0.4.0 2017-03-11T14:39:45Z 1e90f7b
  - Bugfix: update tooling avoids -Ddefault_inc_excludes_dot issues
  - Installer switched to EUMM, this may break some downstreams (hence the major v)
 
